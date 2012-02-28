@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TVViewController : UIViewController
+@interface TVViewController : UIViewController <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *rob;
+@property (weak, nonatomic) IBOutlet UIScrollView *scroll;
+
+- (IBAction)demo1:(id)sender;
+- (IBAction)demo2:(id)sender;
+- (IBAction)demo3:(id)sender;
 
 @end
